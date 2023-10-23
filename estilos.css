@@ -1,0 +1,686 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide el espacio en dos columnas */
+  align-items: center; /* Centra verticalmente */
+  width: 100%;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+/* Estilos para la sección del texto */
+.textos-hero {
+  margin-bottom: 100px;
+  text-align: left;
+  padding: 20px; /* Agrega espacio alrededor del contenido */
+}
+
+/* Estilos para el título h1 */
+.principal-h1 {
+  margin-left: 71px;
+  font-size: 25px;
+  color: #ffffffe0;
+}
+
+/* Estilos para la primera imagen */
+.imagen-logo-sap {
+  margin-left: 60px;
+  width: 75%; /* Ocupa todo el ancho disponible */
+  max-width: 100%; /* Ajusta el tamaño de la imagen */
+  height: auto;
+}
+
+/* Estilos para la segunda imagen */
+.imagen-sap-web {
+  margin-bottom: 100px;
+  margin-top: 90px;
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-height: 100vh; /* Ocupa toda la altura de la ventana */
+  object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
+}
+
+/* estilos generales */
+
+.contenedor,
+.wave-contenedor {
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
+  margin: auto;
+  padding: 0 0 80px 0;
+  margin-top: 50px;
+}
+
+.wave-contenedor img {
+  margin-left: 20px;
+}
+
+.contenedor2 {
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
+  margin: auto;
+  padding: 0 0 80px 0;
+  margin-top: 50px;
+  height: 350px;
+}
+.titulo2 {
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+
+  margin-top: 30px;
+}
+.titulo {
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+.titulo.left {
+  text-align: left;
+}
+.titulo.left1 {
+  margin-left: 400px;
+}
+.titulo.rigth {
+  text-align: right;
+}
+.parrafo {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.resaltar {
+  color: #0f0e0e;
+  font-size: 28px;
+}
+
+/* section */
+
+.website {
+  display: flex;
+  justify-content: space-between;
+}
+.website img {
+  width: 48%;
+}
+.website .contenedor-textos-main {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 40%;
+}
+
+.cta {
+  display: inline-block;
+  text-decoration: none;
+  background-image: linear-gradient(
+    45deg,
+    #5b2899 0%,
+    #3a1695 99%,
+    #c4d8fa 100%
+  );
+  padding: 12px 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+/* info */
+
+.info {
+  background: #2e4bef;
+  color: #fff;
+}
+
+/* cards */
+
+.content-cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card {
+  width: 18%;
+  text-align: center;
+  height: 150px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+  transform: scale(1);
+  transition: transform 0.6s;
+}
+
+.card:hover {
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.card i {
+  margin: 30px 0 20px 0;
+  color: #37344b;
+  font-size: 50px;
+}
+.card h3 {
+  font-size: 12px;
+}
+
+.card p {
+  font-weight: 300;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/* galeia */
+
+.galeria {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.galeria-cont {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: hidden;
+  box-shadow: #3f5469;
+}
+.galeria-cont > img {
+  width: 8%;
+  object-fit: cover;
+  margin-top: 70px;
+
+  display: block;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  overflow: hidden;
+}
+.galeria-cont img {
+  width: 75px;
+}
+
+/* info2 */
+
+.last-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+.last-section h1 {
+  text-align: center;
+  margin-left: 300px;
+}
+.last-section img {
+  width: 48%;
+  display: inline-block;
+  margin-left: 40px;
+}
+.last-section .contenedor-textos-main {
+  width: 40%;
+}
+
+/* footer */
+
+#btn-mas {
+  display: none;
+}
+
+.container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.redes a {
+  display: block;
+  text-decoration: none;
+  background: black;
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  transition: all 500ms ease;
+}
+.icono-sap {
+  margin-top: 15px;
+  margin-left: 3px;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+}
+
+.redes a:hover {
+  background: #fff;
+  color: black;
+}
+
+.redes a {
+  margin: 15px;
+}
+
+nav {
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background-blend-mode: multiply;
+  height: 85px;
+  width: 100%;
+  position: relative;
+}
+
+/* Estilos para los enlaces */
+.enlace {
+  display: inline-block; /* Hace que los enlaces se muestren en línea */
+  width: 110px; /* Establece el ancho deseado para los enlaces (ajusta según tus necesidades) */
+  height: 100px; /* Establece la altura deseada para los enlaces (ajusta según tus necesidades) */
+  margin-right: 10px; /* Agrega un margen derecho para separar las imágenes (ajusta según tus necesidades) */
+  margin-left: 20px;
+}
+
+/* Estilos para las imágenes */
+.enlace img {
+  max-width: 85%; /* Ajusta el tamaño máximo de las imágenes al 100% del ancho de los enlaces */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+
+  margin-top: 15px;
+  margin-left: 5px;
+}
+.enlace-2 {
+  display: inline-block; /* Hace que los enlaces se muestren en línea */
+  width: 100px; /* Establece el ancho deseado para los enlaces (ajusta según tus necesidades) */
+  height: 100px; /* Establece la altura deseada para los enlaces (ajusta según tus necesidades) */
+  margin-right: 10px; /* Agrega un margen derecho para separar las imágenes (ajusta según tus necesidades) */
+}
+
+.enlace-2 img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.logo {
+  height: 40%;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: #ffffff;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+li a.active,
+li a:hover {
+  background: #bcb8c5;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #ffffff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+.titulo {
+  text-align: center;
+}
+
+/* Estilos para la sección */
+.mi-seccion {
+  display: flex; /* Muestra los elementos en una fila */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  color: #fff;
+}
+
+/* Estilos para el texto a la izquierda */
+.texto {
+  flex: 1; /* Toma todo el espacio restante en la fila */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para la imagen a la derecha */
+.imagen {
+  flex: 1;
+  margin-left: 20px; /* Espacio a la derecha de la sección de texto */
+  padding: 10px 10px;
+  margin-top: 20px;
+}
+
+.h3-SAP,
+.P-SAP,
+.UL-SAP {
+  font-family: "Relawey", sans-serif; /* Cambia la fuente a Arial o la fuente que desees */
+  font-size: 16px; /* Tamaño de fuente para los textos */
+  margin-bottom: 10px; /* Espacio entre los elementos de texto */
+}
+
+/* Estilos para la lista desordenada (ul) */
+.UL-SAP {
+  list-style-type: circle;
+  padding-left: 0; /* Elimina el espacio izquierdo de la lista */
+}
+
+/* Estilos para el enlace estilo botón */
+.boton-enlace {
+  display: inline-block;
+  padding: 10px 20px; /* Ajusta el padding según tus preferencias */
+  background-color: #a6b1b7; /* Color de fondo del botón */
+  color: rgb(0, 0, 0); /* Color del texto del botón */
+  text-decoration: none; /* Quita la decoración de subrayado del enlace */
+  border-radius: 5px; /* Borde redondeado del botón */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+  cursor: pointer;
+  margin-top: 55px;
+  margin-left: 250px;
+}
+
+/* Cambia el color de fondo cuando pasas el mouse sobre el botón */
+.boton-enlace:hover {
+  background-color: #000000; /* Nuevo color de fondo al pasar el mouse */
+  color: white;
+}
+
+/* Estilos generales para hacerlo responsive */
+@media (max-width: 768px) {
+  .hero {
+    height: 700px;
+    grid-template-columns: 1fr; /* Cambia a una sola columna */
+    text-align: center;
+  }
+
+  .textos-hero {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .principal-h1 {
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  .imagen-logo-sap {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .imagen-sap-web {
+    margin-bottom: 10px;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .boton-enlace {
+    margin: 20px 0;
+  }
+
+  .content-cards .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .galeria-cont > img {
+    width: 100%;
+  }
+
+  .last-section img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    display: none; /* Oculta la lista de enlaces en dispositivos medianos y pequeños */
+  }
+
+  .checkbtn {
+    display: block; /* Muestra el botón de menú en dispositivos medianos y pequeños */
+  }
+
+  #check:checked + .ul-nav {
+    display: block; /* Muestra la lista de enlaces cuando el botón de menú está marcado */
+  }
+  .container {
+    position: fixed;
+  }
+  .redes a {
+    margin-right: 120px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+  }
+
+  .icono-sap {
+    width: 40%;
+    height: 40%;
+    margin-top: 10px;
+  }
+
+  .principal-h1 {
+    font-size: 18px;
+  }
+
+  .imagen-logo-sap {
+    width: 100%;
+  }
+
+  .imagen-sap-web {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .content-cards .card,
+  .galeria-cont > img,
+  .last-section img {
+    width: 100%;
+  }
+}
+/* Estilos específicos para dispositivos medianos (tabletas) */
+@media (max-width: 768px) {
+  .website img {
+    width: 100%; /* Haz que las imágenes ocupen el 100% del ancho en dispositivos medianos */
+  }
+
+  .website .contenedor-textos-main {
+    width: 100%; /* Ajusta el ancho al 100% para dispositivos medianos */
+    margin-top: 20px; /* Agrega espacio entre las imágenes y el texto */
+  }
+}
+
+/* Estilos específicos para dispositivos pequeños (teléfonos) */
+@media (max-width: 480px) {
+  .website img {
+    width: 100%; /* Haz que las imágenes ocupen el 100% del ancho en dispositivos pequeños */
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+}
+
+.website .contenedor-textos-main {
+  width: 100%; /* Ajusta el ancho al 100% para dispositivos pequeños */
+  margin-top: 20px; /* Agrega espacio entre las imágenes y el texto */
+}
+.parrafo {
+  margin-left: 30px;
+}
+
+footer {
+  background-image: url(imagenes/nuevonuevo.png);
+  background-size: 1270px;
+  height: 700px;
+  display: flex;
+}
+
+.formulario {
+  background: #fff;
+  margin: auto;
+  margin-left: 700px;
+  width: 90%;
+  max-width: 400px;
+  padding: 4.5em, 3em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+  text-align: center;
+}
+.form-title {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+.form-parrafo {
+  font-weight: 300;
+}
+.form-contenedor {
+  margin-top: 3em;
+  display: grid;
+  gap: 2.5em;
+}
+.form-group {
+  position: relative;
+  --color: #5757577e;
+}
+.form-input {
+  width: 100%;
+  background: none;
+  color: #706c6c;
+  font-size: 1rem;
+  padding: 0.6em 0.3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color);
+  font-family: "Roboto" sans-serif;
+}
+
+.form-input:not(placeholder-shown) {
+  color: #4d4646;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(placeholder-shown) + .form-label {
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: left top;
+  color: #3866f2;
+}
+
+.form-label {
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform 0.5s, color 0.3s;
+}
+
+.form-submit {
+  background: #3866f2;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0.8em 0;
+  border: none;
+  border-radius: 1em;
+  cursor: pointer;
+}
+.form-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #09203f;
+  transform: scale(0);
+  transform: left bottom;
+  transition: transform 0.4s;
+}
+
+.form-input:focus ~ .form-line,
+.form-input:not(placeholder-shown) ~ .form-line {
+  transform: scale(1);
+}
+@media (max-width: 425px) {
+  .form-title {
+    font-size: 1.8rem;
+  }
+  .info-last {
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+  }
+  .info-last h1 {
+    margin-left: 8px;
+  }
+  .imagen-tekno {
+    width: 350px;
+    margin-left: 0px;
+  }
+  .imagen-durox {
+    width: 350px;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+}
+.info-last {
+  height: 700px;
+}
+.imagen-tekno {
+  margin-left: 20px;
+  margin-right: 25px;
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+}
+
+/* Media query para tamaños de pantalla aún más pequeños */
+@media (max-width: 480px) {
+  .form-input,
+  .form-label,
+  .form-submit {
+    font-size: 0.9rem;
+  }
+  .formularito {
+    background: #09203f;
+  }
+}

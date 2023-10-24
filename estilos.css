@@ -218,25 +218,6 @@ body {
 
 /* info2 */
 
-.last-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-bottom: 60px;
-}
-.last-section h1 {
-  text-align: center;
-  margin-left: 300px;
-}
-.last-section img {
-  width: 48%;
-  display: inline-block;
-  margin-left: 40px;
-}
-.last-section .contenedor-textos-main {
-  width: 40%;
-}
-
 /* footer */
 
 #btn-mas {
@@ -461,7 +442,7 @@ li a:hover {
   }
 
   .last-section img {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -640,30 +621,6 @@ footer {
   .form-title {
     font-size: 1.8rem;
   }
-  .info-last {
-    align-items: center;
-    justify-content: center;
-    height: 1000px;
-  }
-  .info-last h1 {
-    margin-left: 8px;
-  }
-  .imagen-tekno {
-    width: 350px;
-    margin-left: 0px;
-  }
-  .imagen-durox {
-    width: 350px;
-    margin-top: 50px;
-    margin-left: 20px;
-  }
-}
-.info-last {
-  height: 700px;
-}
-.imagen-tekno {
-  margin-left: 20px;
-  margin-right: 25px;
 }
 
 @media (max-width: 768px) {
@@ -682,9 +639,6 @@ footer {
   }
   .formularito {
     background: #09203f;
-  }
-  .titulo.left1 {
-    margin-left: 2px;
   }
 }
 
@@ -743,7 +697,39 @@ footer {
   }
 }
 
-.titulo.left1 {
-  margin-left: 300px;
-  margin-right: 300px;
+/* Estilos para la sección de testimonios */
+.info-last {
+  text-align: center; /* Centra el contenido del contenedor */
+  padding: 20px; /* Añade espacio alrededor del contenido */
+}
+
+/* Estilos para el contenedor */
+.last-section {
+  margin-bottom: 20px; /* Espacio entre el título y las imágenes */
+}
+
+/* Estilos para el título */
+.titulo {
+  font-size: 36px; /* Tamaño del texto */
+}
+
+/* Estilos para las imágenes */
+.imagen-tekno,
+.imagen-durox {
+  width: 100%; /* Ocupan el 100% del ancho del contenedor */
+  max-width: 600px; /* Máximo ancho de las imágenes */
+  border: 2px solid black; /* Borde de 2px sólido negro */
+  margin-bottom: 20px; /* Espacio entre las imágenes */
+}
+
+/* Estilos responsive para pantallas pequeñas */
+@media (max-width: 767px) {
+  .titulo {
+    font-size: 24px; /* Reduce el tamaño del texto en pantallas pequeñas */
+  }
+
+  .imagen-tekno,
+  .imagen-durox {
+    max-width: 100%; /* Ocupan el 100% del ancho en pantallas pequeñas */
+  }
 }

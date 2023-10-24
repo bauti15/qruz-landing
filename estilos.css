@@ -683,4 +683,67 @@ footer {
   .formularito {
     background: #09203f;
   }
+  .titulo.left1 {
+    margin-left: 2px;
+  }
+}
+
+.contenedor {
+  padding: 80px;
+}
+
+.galeria-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.galeria-cont img {
+  max-width: 100%; /* Asegura que las imágenes no se estiren más allá de su tamaño original */
+  height: auto; /* Hace que las imágenes conserven su proporción original */
+  margin: 10px; /* Añade un espacio entre las imágenes para mayor legibilidad */
+}
+
+/* Media query para dispositivos con un ancho máximo de 768px (tamaño de tabletas) */
+@media (max-width: 768px) {
+  .galeria-cont img {
+    width: 100%; /* Hace que las imágenes ocupen el 100% del ancho del contenedor en dispositivos más pequeños */
+  }
+}
+
+/* Media query para dispositivos con un ancho máximo de 480px (tamaño de teléfonos móviles) */
+@media (max-width: 480px) {
+  .galeria-cont img {
+    width: 100%; /* Hace que las imágenes ocupen el 100% del ancho del contenedor en dispositivos más pequeños */
+    margin: 5px; /* Reduce el espacio entre las imágenes para dispositivos más pequeños */
+  }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 768px (tamaño de tabletas) */
+@media (max-width: 768px) {
+  .formularito .form-title img {
+    width: 100%; /* Hace que la imagen del título del formulario ocupe el 100% del ancho */
+  }
+
+  .formularito .form-contenedor .form-group {
+    width: 100%; /* Hace que los campos del formulario ocupen el 100% del ancho */
+  }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 480px (tamaño de teléfonos móviles) */
+@media (max-width: 480px) {
+  .formularito .form-contenedor .form-group {
+    width: 100%; /* Hace que los campos del formulario ocupen el 100% del ancho */
+    margin-bottom: 15px; /* Añade un espacio entre los campos del formulario para mayor legibilidad */
+  }
+
+  .formularito .form-submit {
+    width: 100%; /* Hace que el botón de enviar ocupe el 100% del ancho */
+  }
+}
+
+.titulo.left1 {
+  margin-left: 300px;
+  margin-right: 300px;
 }

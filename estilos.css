@@ -264,7 +264,7 @@ nav {
   background-blend-mode: multiply;
   height: 85px;
   width: 100%;
-  position: relative;
+  position: absolute;
 }
 
 /* Estilos para los enlaces */

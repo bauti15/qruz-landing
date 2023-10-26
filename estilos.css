@@ -458,10 +458,7 @@ li a:hover {
   #check:checked + .ul-nav {
     display: block; /* Muestra la lista de enlaces cuando el botón de menú está marcado */
   }
-  .container {
-    position: fixed;
-    margin-right: 1px;
-  }
+
   .redes a {
     margin-right: 120px;
     width: 45px;
@@ -768,5 +765,14 @@ footer {
     max-width: 600px;
     margin: 0 auto;
     margin-bottom: 20px; /* Espaciado inferior del párrafo */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    position: fixed;
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+    right: 10px; /* Ajusta la distancia desde el borde derecho */
+    z-index: 9999; /* Asegura que estén en primer plano */
   }
 }

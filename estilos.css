@@ -460,7 +460,7 @@ li a:hover {
   }
   .container {
     position: fixed;
-    margin-right: 2px;
+    margin-right: 1px;
   }
   .redes a {
     margin-right: 120px;
@@ -527,7 +527,7 @@ li a:hover {
 footer {
   background-image: url(imagenes/nuevonuevo.png);
   background-size: 1270px;
-  height: 700px;
+  height: 720px;
   display: flex;
 }
 

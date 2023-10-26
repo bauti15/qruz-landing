@@ -516,6 +516,14 @@ li a:hover {
   }
 }
 
+.website .contenedor-textos-main {
+  width: 100%; /* Ajusta el ancho al 100% para dispositivos pequeños */
+  margin-top: 20px; /* Agrega espacio entre las imágenes y el texto */
+}
+.parrafo {
+  margin-left: 30px;
+}
+
 footer {
   background-image: url(imagenes/nuevonuevo.png);
   background-size: 1270px;
@@ -727,6 +735,7 @@ footer {
   }
 }
 
+/* Estilos para dispositivos pequeños */
 @media (max-width: 768px) {
   .wave-contenedor.website {
     display: flex;
@@ -734,7 +743,7 @@ footer {
     align-items: center;
     justify-content: center; /* Centra tanto vertical como horizontalmente en dispositivos pequeños */
     text-align: center;
-    padding-top: 60px; /* Aumenta el espacio superior */
+    padding-top: 10px; /* Ajuste adicional para reducir el espacio superior */
   }
 
   .wave-contenedor {
@@ -744,43 +753,20 @@ footer {
 
   .contenedor-textos-main {
     text-align: center;
+    margin-top: 10px; /* Ajuste para acercar el contenido a la imagen */
   }
 
   .titulo {
-    font-size: 36px; /* Tamaño de fuente más grande para el título */
+    font-size: 40px; /* Tamaño de fuente más grande para el título */
     font-weight: bold; /* Negrita para resaltar el título */
     margin-bottom: 50px; /* Espaciado inferior del título */
-    margin-left: 30px;
+    margin-left: 20px;
   }
 
   .parrafo {
     width: 90%;
     max-width: 600px;
     margin: 0 auto;
-  }
-}
-
-/* Estilos para dispositivos grandes */
-@media (min-width: 769px) {
-  .wave-contenedor.website {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .wave-contenedor {
-    width: 50%;
-    height: auto;
-  }
-
-  .contenedor-textos-main {
-    width: 40%;
-    text-align: left;
-  }
-
-  .parrafo {
-    width: 100%;
-    max-width: none; /* Restaura el ancho máximo para dispositivos grandes */
-    margin: 0; /* Elimina el margen de los párrafos en dispositivos grandes */
+    margin-bottom: 20px; /* Espaciado inferior del párrafo */
   }
 }

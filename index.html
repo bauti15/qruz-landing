@@ -12,7 +12,18 @@
     <link rel="stylesheet" href="estilos.css" />
     <link rel="stylesheet" href="css/fontello.css" />
   </head>
-
+<script>
+  function confirmacion(){
+    var respuesta = confirm("¿Quieres enviar esta información?");
+    if (respuesta == true){
+      return true;
+      
+    }else{
+        return false;
+      }
+    }
+  
+  </script>
   <body>
     <nav class="barra-navegadora">
       <input type="checkbox" id="check" />
@@ -255,8 +266,13 @@
             />
             <label for="telefono" class="form-label">Telefono Celular</label>
             <span class="form-line"></span>
+            <label for="message"
+            class="form-group">Comentarios</label>
+            <textarea name="massage" id="message" cols="40" rows="5" placeholder=" "></textarea>
+            <span class="form-line"></span>
           </div>
-          <input type="submit" class="form-submit" value="Enviar" />
+
+          <input type="submit" class="form-submit" value="Enviar" onclick="return confirmacion()" />
         </div>
       </form>
     </footer>

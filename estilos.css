@@ -11,7 +11,7 @@ body {
 }
 
 .hero {
-  position: relative;
+  position: initial;
   display: grid;
   grid-template-columns: 1fr 1fr; /* Divide el espacio en dos columnas */
   align-items: center; /* Centra verticalmente */
@@ -264,7 +264,7 @@ nav {
   background-blend-mode: multiply;
   height: 85px;
   width: 100%;
-  position: absolute;
+  position: fixed;
 }
 
 /* Estilos para los enlaces */

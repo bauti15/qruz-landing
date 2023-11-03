@@ -234,9 +234,9 @@ body {
   text-decoration: none;
   background: black;
   color: #fff;
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   text-align: center;
   border-radius: 50%;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
@@ -278,10 +278,10 @@ nav {
 
 /* Estilos para las imágenes */
 .enlace img {
-  max-width: 85%; /* Ajusta el tamaño máximo de las imágenes al 100% del ancho de los enlaces */
+  max-width: 105%; /* Ajusta el tamaño máximo de las imágenes al 100% del ancho de los enlaces */
   height: auto; /* Permite que la altura se ajuste automáticamente */
 
-  margin-top: 15px;
+  margin-top: 5px;
   margin-left: 5px;
 }
 .enlace-2 {
@@ -693,22 +693,30 @@ footer {
   .formularito .form-submit {
     width: 100%; /* Hace que el botón de enviar ocupe el 100% del ancho */
   }
+  .contenedor {
+    margin-top: 10px;
+  }
+  .imagen-tekno,
+  .imagen-durox {
+    margin-top: 10px;
+  }
 }
 
 /* Estilos para la sección de testimonios */
 .info-last {
   text-align: center; /* Centra el contenido del contenedor */
-  padding: 20px; /* Añade espacio alrededor del contenido */
+  padding: 10px; /* Añade espacio alrededor del contenido */
 }
 
 /* Estilos para el contenedor */
 .last-section {
-  margin-bottom: 20px; /* Espacio entre el título y las imágenes */
+  margin-bottom: 10px; /* Espacio entre el título y las imágenes */
 }
 
 /* Estilos para el título */
-.titulo {
+.titulo-left {
   font-size: 36px; /* Tamaño del texto */
+  font-weight: 500;
 }
 
 /* Estilos para las imágenes */
@@ -717,7 +725,7 @@ footer {
   width: 100%; /* Ocupan el 100% del ancho del contenedor */
   max-width: 600px; /* Máximo ancho de las imágenes */
   border: 2px solid black; /* Borde de 2px sólido negro */
-  margin-bottom: 20px; /* Espacio entre las imágenes */
+  margin-bottom: 70px; /* Espacio entre las imágenes */
 }
 
 /* Estilos responsive para pantallas pequeñas */
